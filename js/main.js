@@ -132,6 +132,9 @@ text.addEventListener('click', function () {
     background_music.play()
 })
 
+window.addEventListener('beforeunload',function(){
+    document.body.style.backgroundColor = 'red'
+})
 
 // other settings
 setInterval(() => {
@@ -151,7 +154,7 @@ setInterval(() => {
     }
 
     // other animation codes
-
+    
     player1.style.left = `${player1_left}px`
     player1.style.bottom = `${player1_bottom}px`
     player2.style.left = `${player2_left}px`
