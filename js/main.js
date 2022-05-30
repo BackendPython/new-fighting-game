@@ -135,6 +135,9 @@ text.addEventListener('click', function () {
 window.addEventListener('beforeunload',function(){
     document.body.style.backgroundColor = 'red'
 })
+window.addEventListener('unload',function(){
+    document.body.style.backgroundColor = 'red'
+})
 
 // other settings
 setInterval(() => {
