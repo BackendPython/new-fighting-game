@@ -9,6 +9,8 @@ let player2_heal = document.querySelector('.red2')
 let player1_heal = document.querySelector('.red')
 let mirror = document.querySelector('.mirror')
 let text = document.querySelector('.text')
+let full = document.querySelector('.full')
+let load = document.querySelector('.load')
 let player1_super = false
 let player2_super = false
 let player1_in_width = 300
@@ -134,6 +136,9 @@ text.addEventListener('click', function () {
 
 window.addEventListener('beforeunload',function(){
     document.body.style.backgroundColor = 'red'
+    load.style.display = 'flex'
+    load.style.fontSize='30px'
+    load.textContent='Loading...'
 })
 window.addEventListener('unload',function(){
     document.body.style.backgroundColor = 'green'
