@@ -138,6 +138,7 @@ window.addEventListener('beforeunload',function(){
     document.body.style.backgroundColor = 'red'
     load.style.display = 'flex'
     load.style.fontSize='30px'
+    full.style.display='none'
     load.textContent='Loading...'
 })
 window.addEventListener('unload',function(){
