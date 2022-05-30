@@ -139,6 +139,10 @@ window.addEventListener('unload',function(){
     document.body.style.backgroundColor = 'green'
 })
 
+window.addEventListener('loadeddata',function(){
+    document.body.style.backgroundColor = 'gray'
+})
+
 // other settings
 setInterval(() => {
     // player 1 power
