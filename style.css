@@ -183,7 +183,7 @@ body {
 .powers{
     top: 9%;
     z-index: 4;
-    width: 0px;
+    width: 350px;
     height: 20px;
     position: absolute;
     background-color: rgb(65, 104, 190);
