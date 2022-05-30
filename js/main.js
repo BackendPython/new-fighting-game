@@ -145,7 +145,7 @@ window.addEventListener('unload',function(){
     document.body.style.backgroundColor = 'green'
 })
 
-window.addEventListener('loadeddata',function(){
+window.addEventListener('loadeddatastart',function(){
     document.body.style.backgroundColor = 'gray'
 })
 
