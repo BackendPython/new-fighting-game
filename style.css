@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: yellow;
+}
+
+.full {
+    z-index: 3;
+    width: 1000px;
+    height: 570px;
+    position: relative;
+    background-size: 1000px;
+    border: 2px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/back-removebg-preview.png");
+}
+
+.shop {
+    top: -150px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: absolute;
+    background-size: 50px;
+    background-image: url("images/shop.png");
+}
+
+.shop2 {
+    right: 0px;
+    transform: rotateY(180deg);
+}
+
+.full .win-text {
+    top: -75px;
+    left: 38.5%;
+    display: none;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid aqua;
+    background-color: darkblue;
+}
+
+.full .first-player,
+.second-player {
+    background-size: 200px;
+    animation: player1 1s infinite;
+}
+
+.full .player-heal {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 0px;
+    animation: none;
+    border: 2px solid black;
+}
+/* health bar transition */
+.full .red, .red2{
+    transition: 0s ease;
+}
+/* end */
+.full .player1-heal {
+    position: relative;
+    width: 475px;
+}
+
+.full .player1-heal .red {
+    width: 0px;
+    height: 50px;
+    z-index: 4;
+    right: 0px;
+    position: absolute;
+    background-color: red;
+}
+
+.full .player1-heal .blue {
+    width: 475px;
+    height: 50px;
+    z-index: 3;
+    background-color: chartreuse;
+}
+
+.full .player2-heal {
+    position: relative;
+    width: 475px;
+}
+
+.full .player2-heal .red2 {
+    left: 0px;
+    width: 0px;
+    height: 50px;
+    z-index: 4;
+    position: absolute;
+    background-color: red;
+}
+
+.full .player2-heal .blue2 {
+    width: 475px;
+    height: 50px;
+    z-index: 3;
+    background-color: greenyellow;
+}
+
+.full .player1-text {
+    top: -50px;
+    left: 10px;
+    font-size: 30px;
+    position: absolute;
+}
+
+.full .player2-text {
+    top: -50px;
+    left: 40px;
+    font-size: 30px;
+    position: absolute;
+    transform: rotateX(180deg) rotate(180deg);
+}
+
+.full .mirror {
+    width: 50px;
+    height: 45px;
+    font-size: 40px;
+    border: 0px none;
+    text-align: center;
+    background-color: transparent;
+}
+
+.full .text {
+    left: 40%;
+    width: 200px;
+    color: white;
+    padding: 10px;
+    transition: 3s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position: absolute;
+    background-color: red;
+    animation: box 1s infinite;
+}
+
+.first-player {
+    z-index: 5;
+    left: 0px;
+    bottom: 80px;
+    width: 150px;
+    height: 200px;
+    transition: 1s;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/fighter-2-1.png");
+}
+
+.second-player {
+    z-index: 5;
+    left: 850px;
+    bottom: 80px;
+    width: 150px;
+    height: 200px;
+    transition: 1s;
+    transform: rotateY(180deg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/fighter-2-1.png");
+}
+
+/* players power */
+.powers{
+    top: 9%;
+    z-index: 4;
+    width: 350px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(65, 104, 190);
+}
+.player1-in{
+    left: 0%;
+}
+.player2-in{
+    right: 0%;
+}
+.player2-in-in{
+    position: absolute;
+}
+.p2{
+    left: 0px;
+    width: 0px;
+    height: 20px;
+    position: absolute;
+    background-color:  darkblue;
+}
+
+@keyframes box {
+    100% {
+        box-shadow: 3px 3px 0px black, 3px -3px 0px black, -3px 3px 0px black,
+            -3px -3px 0px black;
+    }
+}
+
+@keyframes player1 {
+    100% {
+        background-size: 195px;
+    }
+}
+
+/* @media screen and (width > height) {
+    body{
+        background-color: red;
+    }
+} */
