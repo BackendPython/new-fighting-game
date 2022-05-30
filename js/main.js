@@ -136,7 +136,7 @@ window.addEventListener('beforeunload',function(){
     document.body.style.backgroundColor = 'red'
 })
 window.addEventListener('unload',function(){
-    document.body.style.backgroundColor = 'red'
+    document.body.style.backgroundColor = 'green'
 })
 
 // other settings
